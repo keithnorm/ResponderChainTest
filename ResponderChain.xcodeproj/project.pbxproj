@@ -23,7 +23,6 @@
 		4EC4F1651892335D00815AB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC4F1631892335D00815AB7 /* InfoPlist.strings */; };
 		4EC4F1671892335D00815AB7 /* ResponderChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F1661892335D00815AB7 /* ResponderChainTests.m */; };
 		4EC4F1721892338100815AB7 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F1711892338100815AB7 /* View.m */; };
-		4EC4F17D18923A4900815AB7 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC4F17C18923A4900815AB7 /* Reveal.framework */; };
 		4EC4F18018923D4800815AB7 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F17F18923D4800815AB7 /* ContentView.m */; };
 		4EC4F183189242C300815AB7 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F182189242C300815AB7 /* TableCell.m */; };
 /* End PBXBuildFile section */
@@ -73,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC4F17D18923A4900815AB7 /* Reveal.framework in Frameworks */,
 				4EC4F13B1892335D00815AB7 /* CoreGraphics.framework in Frameworks */,
 				4EC4F13D1892335D00815AB7 /* UIKit.framework in Frameworks */,
 				4EC4F1391892335D00815AB7 /* Foundation.framework in Frameworks */,
