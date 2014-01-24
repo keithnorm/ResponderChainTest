@@ -1,5 +1,5 @@
 //
-//  TableCell.h
+//  TableView.h
 //  ResponderChain
 //
 //  Created by Keith Norman on 1/23/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableCell : UITableViewCell
+@interface TableView : UITableView
 
 @end

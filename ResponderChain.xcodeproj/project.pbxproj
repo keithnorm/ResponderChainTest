@@ -25,6 +25,7 @@
 		4EC4F1721892338100815AB7 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F1711892338100815AB7 /* View.m */; };
 		4EC4F18018923D4800815AB7 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F17F18923D4800815AB7 /* ContentView.m */; };
 		4EC4F183189242C300815AB7 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F182189242C300815AB7 /* TableCell.m */; };
+		4EC4F1861892519700815AB7 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F1851892519700815AB7 /* TableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		4EC4F17F18923D4800815AB7 /* ContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
 		4EC4F181189242C300815AB7 /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
 		4EC4F182189242C300815AB7 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		4EC4F1841892519700815AB7 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		4EC4F1851892519700815AB7 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				4EC4F17F18923D4800815AB7 /* ContentView.m */,
 				4EC4F181189242C300815AB7 /* TableCell.h */,
 				4EC4F182189242C300815AB7 /* TableCell.m */,
+				4EC4F1841892519700815AB7 /* TableView.h */,
+				4EC4F1851892519700815AB7 /* TableView.m */,
 			);
 			path = ResponderChain;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				4EC4F183189242C300815AB7 /* TableCell.m in Sources */,
 				4EC4F1721892338100815AB7 /* View.m in Sources */,
 				4EC4F1521892335D00815AB7 /* ViewController.m in Sources */,
+				4EC4F1861892519700815AB7 /* TableView.m in Sources */,
 				4EC4F1491892335D00815AB7 /* AppDelegate.m in Sources */,
 				4EC4F1451892335D00815AB7 /* main.m in Sources */,
 				4EC4F18018923D4800815AB7 /* ContentView.m in Sources */,

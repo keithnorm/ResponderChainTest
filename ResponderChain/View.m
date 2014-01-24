@@ -29,7 +29,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   TableCell *cell = [[TableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
   ContentView *view = [[ContentView alloc] initWithFrame:cell.bounds];
-  view.backgroundColor = [UIColor lightGrayColor];
+  cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+  view.backgroundColor = [UIColor clearColor];
   UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
   [button setTitle:@"Button" forState:UIControlStateNormal];
   button.backgroundColor = [UIColor blueColor];
@@ -39,7 +40,7 @@
   [button addTarget:self action:@selector(sendStuff:) forControlEvents:UIControlEventTouchUpInside];
   [view addSubview:button];
   [cell.contentView addSubview:view];
-  cell.backgroundColor = [UIColor redColor];
+  cell.backgroundColor = [UIColor greenColor];
   return cell;
 }
 
@@ -47,6 +48,5 @@
   UIButton *btn = (UIButton *)sender;
   [btn sendActionsForControlEvents:(1 << 24)];
 }
-
 
 @end

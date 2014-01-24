@@ -12,8 +12,25 @@
 
 // uncomment this to see event caught by the cell's subview
 //- (void)customEventFired:(id)sender {
-//  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Event Triggered in cell subview" message:@"so far so good..." delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
-//  [alertView show];
+//  UIView *superview = self.superview;
+//  while (superview != nil) {
+//    if ([superview respondsToSelector:@selector(customEventFired:)]) {
+//      [superview performSelector:@selector(customEventFired:) withObject:self];
+//      break;
+//    }
+//    superview = superview.superview;
+//  }
 //}
+
+- (void)customEventFired:(id)sender {
+  UIResponder *nextResponder = self.nextResponder;
+  while (nextResponder) {
+    if ([nextResponder respondsToSelector:@selector(customEventFired:)]) {
+      [nextResponder performSelector:@selector(customEventFired:) withObject:sender];
+      break;
+    }
+    nextResponder = nextResponder.nextResponder;
+  }
+}
 
 @end
