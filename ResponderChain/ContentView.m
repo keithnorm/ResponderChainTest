@@ -12,25 +12,9 @@
 
 // uncomment this to see event caught by the cell's subview
 //- (void)customEventFired:(id)sender {
-//  UIView *superview = self.superview;
-//  while (superview != nil) {
-//    if ([superview respondsToSelector:@selector(customEventFired:)]) {
-//      [superview performSelector:@selector(customEventFired:) withObject:self];
-//      break;
-//    }
-//    superview = superview.superview;
-//  }
+//  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:@"Event triggered in contentView" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+//  [alertView show];
 //}
 
-- (void)customEventFired:(id)sender {
-  UIResponder *nextResponder = self.nextResponder;
-  while (nextResponder) {
-    if ([nextResponder respondsToSelector:@selector(customEventFired:)]) {
-      [nextResponder performSelector:@selector(customEventFired:) withObject:sender];
-      break;
-    }
-    nextResponder = nextResponder.nextResponder;
-  }
-}
 
 @end

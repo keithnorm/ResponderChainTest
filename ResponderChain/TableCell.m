@@ -10,8 +10,7 @@
 
 @implementation TableCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
@@ -19,24 +18,28 @@
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
 }
 
 - (BOOL)canBecomeFirstResponder {
-  return YES;
+    return YES;
 }
 
 - (BOOL)resignFirstResponder {
-  return NO;
+    return NO;
 }
 
 - (void)customEventFired:(id)sender {
-  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Event triggered in table view cell" message:@"You win!" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
-  [alertView show];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Event triggered in table view cell" message:@"You win!" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+
+    [alertView show];
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    return [self respondsToSelector:action];
 }
 
 @end
